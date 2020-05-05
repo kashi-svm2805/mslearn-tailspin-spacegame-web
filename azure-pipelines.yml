@@ -1,4 +1,8 @@
 trigger:
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'publish'
+    publishWebProjects: true
 - '*'
 
 pool:
